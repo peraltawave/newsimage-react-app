@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import AuthService from './components/AuthService';
 import withAuth from './components/withAuth';
+import Images from './components/Images';
 const Auth = new AuthService();
 
 class App extends Component {
@@ -29,6 +30,7 @@ class App extends Component {
           <button type="button" className="btn btn-primary" onClick={this.goToEditProfile}>Go to Profile</button>
           <button type="button" className="btn btn-danger" onClick={this.handleLogout}>Logout</button>
         </p>
+        <Images/>
       </div>
     );
   }
