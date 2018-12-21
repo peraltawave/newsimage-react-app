@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import AuthService from './AuthService';
-import { Link } from 'react-router-dom';
+// import AuthService from './AuthService';
+// import { Link } from 'react-router-dom';
 import axios from 'axios';
 
 class Images extends Component {
@@ -24,8 +24,10 @@ class Images extends Component {
         return (
             <div className="container">
                 {this.state.articles.map(article => {
-                    return <div>{article.description}
-                    <img src={article.urlToImage}></img>
+                    return <div>
+                    <a href={article.url}>{article.description}</a>
+                    <img src={article.urlToImage} alt={article.title}></img>
+                    
                     
                     </div>
                 })}
