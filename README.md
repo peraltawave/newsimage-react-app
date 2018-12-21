@@ -1,98 +1,63 @@
-# Create React Express App
 
-## About This Boilerplate
+# **Project 3 Outline**
+## **newsimage-react-app**
+> University of Arizona Coding Bootcamp / Fall 2018
 
-This setup allows for a Node/Express/React/JWT app which can be easily deployed to Heroku.
+### **PROJECT SUMMARY**
+> Our app is based on two principles:  
+> 1. A single picture is worth a thousande words  
+> 2. Todays website users are visually driven making our method of presenting news articles useful and therefore preferred
 
-The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon.
+#### **Group Project Members**
+Keith Downey / Derek Maloney / Alex Lialios / Miguel Peralta
+> https://opencollective.com/synapseclub
 
-An article on how the server is setup with JWT can be found [here](https://hptechblogs.com/using-json-web-token-for-authentication/). This has been modified to use a mongo database instead of hardcoded array of users.
+### **TECHNICAL DETAILS**  
+#### ***create-react-express-jwt***  
+> https://github.com/Travo100/create-react-express-jwt     
+> This setup allows for a Node/Express/React/JWT app which can be easily deployed to Heroku.
+> The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon. The front end has been setup to use JWT as a way of authenticating users and routes. To understand it's structure better please refer to the following article here
 
-The front end has been setup to use JWT as a way of authenticating users and routes. To understand it's structure better please refer to the following article [here](https://hptechblogs.com/using-json-web-token-react/)
+> Server-side article and using JWT:  
+> https://hptechblogs.com/using-json-web-token-for-authentication/  
+> Front End article on using the JWT on a react application:  
+> https://hptechblogs.com/using-json-web-token-react/
 
-Please feel free to modify this code in anyway you see fit for your project. It is a boilerplate setup that tries to make sure you can get something up and running without having to worry about setting up user authentication from scratch.
-I highly suggest you read the articles before jumping in so you can have an better understanding of how everything works in the code. 
+#### ***react-table***
+> https://react-table.js.org  
+> A lightweight, fast and extendable datagrid built for React
 
-Server-side article and using JWT: https://hptechblogs.com/using-json-web-token-for-authentication/
+#### ***react-photo-gallery***
+> http://neptunian.github.io/react-photo-gallery  
+> Component used to build and maintain galleries. Decided to use this rather than our first choice (http://materliu.github.io/gallery-by-react/) -- mainly because this repo was really old, depended on an old version of React, and basically looked like a mess under the hood :(
 
-Front End article on using the JWT on a react application: https://hptechblogs.com/using-json-web-token-react/
+### **APIS**  
 
-## Starting the app locally
+#### ***News API***
+> https://newsapi.org/docs/get-started#top-headlines  
+> Free API provider for news headlines. Our thought is to call the image prop from for display, and then link to news article
 
-First off make sure you have a local version of MongoDB running on your machine. This project will make a local database for you called `appDB`.
+#### ***Reuters***
+> https://developers.thomsonreuters.com/all/api-overviews  
+> I think this is free for students - will need to check
 
-```
-mongod
-```
+### **PRACTICE WORK**  
+This is the tutorial that we used to get us going and establish some boilerplate code and folder structure
+> https://medium.com/javascript-in-plain-english/full-stack-mongodb-react-node-js-express-js-in-one-simple-app-6cc8ed6de274
 
-Start by installing front and backend dependencies. While in the root directory, run the following command:
+We set up a simple CRUD app, but we have some bugs. It uses mongo deployed on mLab
+> https://drive.google.com/file/d/1mzbbD3eqpL0oviJjLSQDebJrG2a4Ha3q/view
 
-```
-yarn installDeps
-```
-
-After all installations complete, run the following command in your terminal:
-
-```
-yarn start
-```
-
-That's it, your app should be running on <http://localhost:3000>. The Express server should intercept any AJAX requests from the client.
-
-## Deployment (Heroku)
-
-### Create a Git Repo
-
-Once you're ready to deploy, start by making sure your project is a git repository. If so, proceed to the next section, otherwise run the following commands in your terminal:
-
-```
-git init
-git add .
-git commit -m "Initial commit"
-```
-
-### Heroku
-
-Make sure that you have a Heroku app created for this project. If so, proceed to the next section, otherwise run the following command in your terminal:
-
-```
-heroku create
-```
-
-Optionally add an argument for your application's name after `create`, e.g.
-
-```
-heroku myAwesomeApp
-```
-
-### Deploying
-
-#### Option 1
-
-Use the deploy script inside of the outer `package.json`
-
-After confirming that you have an up to date git repository and a Heroku app created, run the following command to deploy:
-
-```
-yarn deploy
-```
-
-If all previous steps were followed correctly, your application should be deployed to Heroku!
-
-#### Option 2
-
-Manually deploy 
-
-After confirming that you have an up to date git repository and a Heroku app created, complete the following:
-
-1. Build the React app for production by running the following command:
-
-```
-yarn build
-```
-
-2. Add and commit all changes to git
-
-3. Push to Heroku
-
-If all previous steps were followed correctly, your application should be deployed to Heroku!
+## Requirements Checklist
+- [x] React
+- [x] Node Server  
+- [x] Express
+- [x] Mongo / Mongoose
+- [x] Get & Post
+- [x] Heroku
+- [x] Two Unused Libraries: Material UI, Standard JS or Prettier for coding standards
+- [x] User Auth: using JWT
+- [x] Polished front end
+- [x] MVC Folder Structure
+- [x] Coding Standards (Standard JS or Prettier)
+- [x] API security - keys, .env, etc.
