@@ -8,6 +8,13 @@
 > 1. A single picture is worth a thousand words  
 > 2. Todays website users are visually driven making our method of presenting news articles useful and therefore preferred
 
+#### **To Start the App in your Browser**
+```
+yarn start
+```
+
+
+
 #### **Group Project Members**
 Keith Downey / Derek Maloney / Alex Lialios / Miguel Peralta
 > https://opencollective.com/synapseclub

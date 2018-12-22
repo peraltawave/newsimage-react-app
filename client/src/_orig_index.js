@@ -8,7 +8,8 @@ import { Route, BrowserRouter as Router } from 'react-router-dom';
 import axios from "axios";
  
 // Miguel added this to test material-ui
- import Bmoney from './components/Bmoney';
+ import Button from '@material-ui/core/Button';
+ import Button from './components/Bmoney';
 
 
 // Default Components
@@ -35,8 +36,9 @@ ReactDOM.render(
     <Router>
         
         <div>
+            
             <Navbar />
-            <Bmoney color="primary"/>
+            <Button />
             <Images />
             <Route exact path="/" component={App} />
             <Route exact path="/login" component={Login} />
@@ -47,19 +49,3 @@ ReactDOM.render(
     , document.getElementById('root')
 );
 registerServiceWorker();
-
-
-
-// import React from "react";
-// import ReactDOM from "react-dom";
-// import Button from "@material-ui/core/Button";
-
-// function App() {
-//   return (
-//     <Button variant="contained" color="primary">
-//       Hello World
-//     </Button>
-//   );
-// }
-
-// ReactDOM.render(<App />, document.querySelector("#app"));

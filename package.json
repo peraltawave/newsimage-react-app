@@ -20,6 +20,7 @@
     "nodemon": "^1.18.3"
   },
   "dependencies": {
+    "@material-ui/core": "^3.7.0",
     "bcrypt-nodejs": "^0.0.3",
     "body-parser": "^1.18.3",
     "express": "^4.15.4",
