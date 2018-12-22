@@ -14,7 +14,13 @@ class Images extends Component {
     componentDidMount() {
         axios.get('https://newsapi.org/v2/top-headlines?country=us&apiKey=599a090fac7d4698901471c3edff281c')
             .then(res => {
-                this.setState({ articles: res.data.articles });
+
+                var arr = [];
+                for (var i= 0; i < 10; i++){
+                    arr.push(res.data.articles[i])
+                }
+
+                this.setState({ articles: arr });
                 console.log(this.state)
             })
 
