@@ -40,7 +40,6 @@ ReactDOM.render(
         
         <div>
             <Navbar />
-            <Bmoney color="primary"/>
             
             <Route exact path="/" component={App} />
             <Route exact path="/login" component={Login} />
