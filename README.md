@@ -5,15 +5,24 @@
 
 ### **PROJECT SUMMARY**
 > Our app is based on two principles:  
-> 1. A single picture is worth a thousande words  
+> 1. A single picture is worth a thousand words  
 > 2. Todays website users are visually driven making our method of presenting news articles useful and therefore preferred
+
+#### **To Start the App in your Browser**
+```
+yarn start
+```
+
+
 
 #### **Group Project Members**
 Keith Downey / Derek Maloney / Alex Lialios / Miguel Peralta
 > https://opencollective.com/synapseclub
 
-### **TECHNICAL DETAILS**  
-#### ***create-react-express-jwt***  
+
+
+
+### **TECHNICAL DETAILS**
 > https://github.com/Travo100/create-react-express-jwt     
 > This setup allows for a Node/Express/React/JWT app which can be easily deployed to Heroku.
 > The front-end React app will auto-reload as it's updated via webpack dev server, and the backend Express app will auto-reload independently with nodemon. The front end has been setup to use JWT as a way of authenticating users and routes. To understand it's structure better please refer to the following article here
@@ -30,6 +39,34 @@ Keith Downey / Derek Maloney / Alex Lialios / Miguel Peralta
 #### ***react-photo-gallery***
 > http://neptunian.github.io/react-photo-gallery  
 > Component used to build and maintain galleries. Decided to use this rather than our first choice (http://materliu.github.io/gallery-by-react/) -- mainly because this repo was really old, depended on an old version of React, and basically looked like a mess under the hood :(
+
+### **FRONT-END**
+
+#### ***Material-UI is available as an npm package.***
+```
+// with npm
+npm install @material-ui/core
+
+// with yarn
+yarn add @material-ui/core
+```
+
+#### ***Roboto Font***
+```
+// Shown below is a sample link markup used to load the Roboto font from a CDN.
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500">
+
+// Install typface using yarn
+yarn add typeface-roboto --save
+```
+> **Please note that react >= 16.3.0 and react-dom >= 16.3.0 are peer dependencies.**
+
+
+
+
+
+
+
 
 ### **APIS**  
 
@@ -48,7 +85,7 @@ This is the tutorial that we used to get us going and establish some boilerplate
 We set up a simple CRUD app, but we have some bugs. It uses mongo deployed on mLab
 > https://drive.google.com/file/d/1mzbbD3eqpL0oviJjLSQDebJrG2a4Ha3q/view
 
-## Requirements Checklist
+### **REQUIREMENTS**
 - [x] React
 - [x] Node Server  
 - [x] Express
