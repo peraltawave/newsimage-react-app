@@ -5,6 +5,7 @@ import App from './App';
 
 
 
+
 import registerServiceWorker from './registerServiceWorker';
 import { Route, BrowserRouter as Router } from 'react-router-dom';
 import axios from "axios";
@@ -21,7 +22,8 @@ import Navbar from './components/Navbar';
 
 
 // Custom components
-import Images from './components/Images';
+
+import Kmoney from './components/Gallery/index'
 
 
 // Here is if we have an id_token in localStorage
@@ -39,11 +41,13 @@ ReactDOM.render(
         <div>
             <Navbar />
             <Bmoney color="primary"/>
-            <Images />
+            
             <Route exact path="/" component={App} />
             <Route exact path="/login" component={Login} />
             <Route exact path="/signup" component={Signup} />
             <Route exact path="/profile" component={Profile} />
+            <Kmoney />
+            
         </div>
     </Router>
     , document.getElementById('root')
