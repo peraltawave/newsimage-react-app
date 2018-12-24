@@ -16,7 +16,7 @@
   dependencies:
     regenerator-runtime "^0.12.0"
 
-"@material-ui/core@^3.7.0":
+"@material-ui/core@^3.7.1":
   version "3.7.1"
   resolved "https://registry.yarnpkg.com/@material-ui/core/-/core-3.7.1.tgz#353845d59489453fb474a4deabdb62a98d0e0ef7"
   integrity sha512-CjIGwvzn84BgzXWzC9M/Tz2gDI7AfUe3G1JXkZQAVy+ddPikh+iZwn5snnElfcjuC+ahXxaIyK49ARt3NM49vQ==
